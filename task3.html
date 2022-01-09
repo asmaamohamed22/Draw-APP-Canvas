@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drawing</title>
+    <link href="task3.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <h2 style="text-align:center">Paint APP</h2>
+    </div>
+    <canvas id="canvas" width="1200" height="800"></canvas>
+
+    <div id="controls">
+
+        <div class="lightBorder">
+            <p><label>Fill Lines & Shapes <input id="fillBox" type="checkbox" checked="checked">
+                </label></p>
+            <p><label>Fill Style : <input id="fillColor" hidden type="color" value="#000000"><img src="circle.png"
+                        alt="colors" /></label> </p>
+
+            <p><label>Stroke Style : <input id="strokeColor" hidden type="color"><img src="circle.png"
+                        alt="colors" /></label>
+            </p>
+        </div>
+        <div class="lightBorder">
+            <p><label>Line width <input id="lineWidth" type="range" step="1" min="1" max="200" value="4"></label></p>
+            <p><input type="radio" name="lineCap" value="butt" checked="checked"> Straight</p>
+            <p><input type="radio" name="lineCap" value="round"> Round</p>
+        </div>
+
+        <div class="lightBorder">
+            <p style="font-size: 15px;"><label for="shape">Shapes </label></p>
+            <p><input type="radio" name="shape" value="line" checked="checked"><span> ╱</span></p>
+            <p><input type="radio" name="shape" value="hline" id="hline"><span>✎</span></p>
+            <p><input type="radio" name="shape" value="circle"><span>⚫</span></p>
+            <p><input type="radio" name="shape" value="rect"><span> ▅</span></p>
+        </div>
+        <div class="buttons">
+            <button id="clear" type="button">Clear</button>
+            <button id="save" type="button">Save</button>
+        </div>
+
+
+    </div>
+    <script src="task3.js"></script>
+</body>
+
+</html>
